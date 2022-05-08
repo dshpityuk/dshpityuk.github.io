@@ -1,12 +1,11 @@
 .advantages {
     padding: 73px 0 83px 0;
-    min-height: 472px;
     background: #f6f6f6;
     &__wrapper {
         margin-top: 77px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
     }
     &__header {
         text-align: center;
@@ -14,14 +13,17 @@
         font-size: 30px;
         color: #0D0D0D;
     }
-    &__icons {
-        display: flex;
-        justify-content: space-between;
-        width: 952px;
-        text-align: center;
+    &__items {
+        max-width: 280px;
         span {
             text-decoration-line: underline;
             color: $main-color;
+        }
+    }
+    &__icon {
+        img {
+            display: block;
+            margin: 0 auto 35px auto;
         }
     }
     &__main_text {
@@ -40,10 +42,4 @@
         width: 277px;
         color: #0D0D0D;
     }
-}
-
-/* @media (max-width: 867px) {
-    .advantages {
-        &__
-    }
-}; */
+};
